@@ -15,11 +15,9 @@ if n < 0:
 	out="Invalid input."
 elif n==0:
 	out.append(f0)
-elif n==1:
-	out.extend([f0,f1])
 else:
 	out.extend([f0,f1])
-	for i in range((n-1) or 1):
+	for i in range(n-1):
 		f3=f0+f1
 		out.append(f3)
 		f0=f1
