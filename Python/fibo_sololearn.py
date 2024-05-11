@@ -5,24 +5,16 @@ if sys.argv[1]:
 else:
 	num=int(input("Fibo nth? "))
 
-f0=0
-f1=1
 def fibonacci(n):
-	global f0,f1
-	#complete the recursive function
-	if n<=1:
-		print(f0)
-		print(f1)
-		return f0,f1
+	print(n)
+	if n <= 1:
+		return n
 	else:
-		f0,f1 = (fibonacci(n-1))
-		f3=f0+f1
-		print(f3)
-		f0=f1
-		f1=f3
-		return f0,f1
+		return fibonacci(n-1) + fibonacci(n-2)
 
-fibonacci(num-1)
+for i in range(num):
+	print("i=",i)
+	print(">>>",fibonacci(i))
 
 """
 Sample Input
@@ -35,5 +27,5 @@ Sample Output
 2
 3
 5
-4
+8
 """
