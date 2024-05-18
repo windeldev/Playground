@@ -10,3 +10,12 @@ if re.match(pattern, "gray"):
 
 if re.match(pattern, "stingray"):
     print("Match 3")
+
+word = input()
+#your code goes here
+
+ptrn = r"^m..e$"
+if re.match(ptrn, word):
+    print("Match")
+else:
+    print("No match")
