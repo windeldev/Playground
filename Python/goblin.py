@@ -20,7 +20,7 @@ class Goblin(GameObject):
 		return self._desc + "\n" + health_line
 	
 	@desc.setter
-	def desc(self):
+	def desc(self, value):
 		self._desc = value
 
 	def get_desc(self):
