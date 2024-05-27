@@ -16,7 +16,16 @@ def sum_items(ilist):
             tot += int(i)
         print(f"Sum: {tot}")
 
+def avg_items(ilist):
+    if ilist:
+        ilist = ilist.split(",")
+        tot = 0
+        for i in ilist:
+            tot += int(i)
+        print(f"Avg: {tot/len(ilist)}")
+
 lst = input("Enter list: ")
 print(f"Original list {lst}")
 item_swap(lst)
 sum_items(lst)
+avg_items(lst)
