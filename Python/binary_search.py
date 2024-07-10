@@ -51,7 +51,7 @@ while True:
         if item:
             break
         else:
-            print("Invalid search item!")
+            print("Invalid search item! Please try again.")
 
 print(binary_search(ilist, item))
 
