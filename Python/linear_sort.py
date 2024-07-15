@@ -23,5 +23,5 @@ while True:
         else:
             print("Enter comma-delimited list of items to sort")
 print("Before:",_input)
-print("After:",linear_sort(_input.split(",")))
+print("After:",",".join(linear_sort(_input.split(","))))
 
