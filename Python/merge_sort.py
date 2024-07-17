@@ -1,8 +1,8 @@
 import sys
-def halve(_in_list):
-    half_len = int(_in_list / 2)
+def halve(_in_list, st, ed):
+    half_len = int(len(_in_list) / 2)
     if half_len > 1:
-        halve(_in_list[:half_len])
+        return halve(_in_list[:half_len])
     else:
         return _in_list[0]
 
