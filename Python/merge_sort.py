@@ -1,13 +1,13 @@
 import sys
 def halve(_in_list, st, ed):
-    half_len = int(len(_in_list) / 2)
+    half_len = int(ed / 2)
     if half_len > 1:
-        return halve(_in_list[:half_len])
+        return halve(_in_list[:half_len], st, half_len)
     else:
         return _in_list[0]
 
 def merge_sort(in_list):
-    halve(in_list, 0, len(in_list)
+    print(halve(in_list, 0, len(in_list)))
 
 
 
@@ -15,15 +15,15 @@ def merge_sort(in_list):
 
 
 
-    lst_len = len(in_list)
-    for i in range(lst_len):
-        for j in range(i+1, lst_len):
-            tmp = ''
-            if in_list[i] > in_list[j]:
-                tmp = in_list[i]
-                in_list[i] = in_list[j]
-                in_list[j] = tmp
-    return in_list
+    #lst_len = len(in_list)
+    #for i in range(lst_len):
+    #    for j in range(i+1, lst_len):
+    #        tmp = ''
+    #        if in_list[i] > in_list[j]:
+    #            tmp = in_list[i]
+    #            in_list[i] = in_list[j]
+    #            in_list[j] = tmp
+    #return in_list
 
 print("Merge Sort:")
 print("Enter comma-delimited list of items to sort:")
