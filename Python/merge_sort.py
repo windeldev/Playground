@@ -7,7 +7,7 @@ def halve(_in_list, st, ed):
         return _in_list[0]
 
 def merge_sort(in_list):
-
+    halve(in_list, 0, len(in_list)
 
 
 
