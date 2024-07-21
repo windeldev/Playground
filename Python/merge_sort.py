@@ -8,6 +8,7 @@ def halve(_in_list, st, ed):
 
 def merge_sort(in_list):
     print(halve(in_list, 0, len(in_list)))
+    print(halve(in_list, 0, len(in_list)))
 
 
 
