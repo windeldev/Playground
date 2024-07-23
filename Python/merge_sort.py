@@ -1,14 +1,15 @@
 import sys
-def halve(_in_list, st, ed):
-    half_len = int(ed / 2)
-    if half_len > 1:
-        return halve(_in_list[:half_len], st, half_len)
-    else:
-        return _in_list[0]
-
 def merge_sort(in_list):
-    print(halve(in_list, 0, len(in_list)))
-    print(halve(in_list, 0, len(in_list)))
+    # 9,2,3,1
+    if len(in_list) <= 1:
+        return in_list
+    
+    mid = len(in_list) // 2
+    left = merge_sort(in_list[:mid])
+    right = merge_sort(in_list[mid:])
+
+    print(f'left {left}')
+    print(f'right {right}')
 
 
 
