@@ -11,7 +11,25 @@ def merge_sort(in_list):
     print(f'left {left}')
     print(f'right {right}')
 
+    return merge(left, right)
 
+def merge(left, right):
+    res = []
+    i = j = 0
+
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            res.append(left[i])
+            i += 1
+        else:
+            res.append(right[j])
+            j += 1
+    
+    result.extend
+
+    print(f'Left:{left},right:{right},Left[i:]:{left[i:]},Right:{right[j:]},merge:{res}')
+
+    return res
 
 
 
