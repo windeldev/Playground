@@ -17,6 +17,8 @@ def merge(left, right):
     res = []
     i = j = 0
 
+    print('start merge')
+
     while i < len(left) and j < len(right):
         if left[i] <= right[j]:
             res.append(left[i])
@@ -24,26 +26,13 @@ def merge(left, right):
         else:
             res.append(right[j])
             j += 1
-    
-    result.extend
+
+    res.extend(left[i:])
+    res.extend(right[j:])
 
     print(f'Left:{left},right:{right},Left[i:]:{left[i:]},Right:{right[j:]},merge:{res}')
 
     return res
-
-
-
-
-
-    #lst_len = len(in_list)
-    #for i in range(lst_len):
-    #    for j in range(i+1, lst_len):
-    #        tmp = ''
-    #        if in_list[i] > in_list[j]:
-    #            tmp = in_list[i]
-    #            in_list[i] = in_list[j]
-    #            in_list[j] = tmp
-    #return in_list
 
 print("Merge Sort:")
 print("Enter comma-delimited list of items to sort:")
