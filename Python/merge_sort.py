@@ -27,8 +27,8 @@ def merge(left, right):
             res.append(right[j])
             j += 1
 
-    res.extend(left[i:])
-    res.extend(right[j:])
+    res.extend(left[i:] + right[j:])
+    
     print(f'Left:{left},right:{right},Left[i:]:{left[i:]},Right:{right[j:]},merge:{res}')
 
     return res
