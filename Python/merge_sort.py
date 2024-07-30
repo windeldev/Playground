@@ -29,7 +29,6 @@ def merge(left, right):
 
     res.extend(left[i:] + right[j:])
     print(f'Left:{left},right:{right},Left[i:]:{left[i:]},Right:{right[j:]},merge:{res}')
-
     return res
 
 print("Merge Sort:")
